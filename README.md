@@ -4,7 +4,7 @@
 
 View my notebook with detailed steps here: [2_Skills_Count.ipynb](Project\2_Skills_Count.ipynb)
 
-## 2. My example code to visualize data
+## My example code to visualize data
 ```python
 fig, ax = plt.subplots(len(job_titles), 1)
 
@@ -38,3 +38,38 @@ plt.show()
 - SQL is a mass tool in Data roles
 - Data Scientist uses Python mostly
 - Python is less popular tool in Data Analyst Field
+
+## 2. How are in-demand skills trending for Data Analyst
+
+### Example Coding
+```python
+df_plot = df_DA_US_percent.iloc[:, :5]
+
+sns.lineplot(data=df_plot, dashes=False, palette='tab10')
+sns.set_theme(style='ticks')
+sns.despine()
+
+plt.title('Trending Top Skills for Data Analysts in the US')
+plt.ylabel('Likelihood in Job Posting')
+plt.xlabel('2023')
+plt.legend().remove()
+plt.gca().yaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+for i in range(5):
+    plt.text(11.2, df_plot.iloc[-1, i], df_plot.columns[i], color='black')
+
+plt.show()
+```
+
+### Results
+
+![Visualization of trending skills demand](Project\images\skill_trend.png)
+
+### Insights
+
+- SQL dominates — the foundational skill for querying and working with databases.
+- Excel remains strong — traditional but still widely used in business analytics.
+- Python is rising steadily — indicating more technical, data-driven analyst roles.
+- Visualization tools (Tableau, Power BI) are critical but secondary — showing that visualization is important but built on top of data skills like SQL/Python.
+- No skill declined sharply, meaning demand for these tools stayed stable across 2023, with slight dips mid-year (Jul–Sep) — possibly due to fewer job postings during that period.
+
