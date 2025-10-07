@@ -39,7 +39,9 @@ plt.show()
 - Data Scientist uses Python mostly
 - Python is less popular tool in Data Analyst Field
 
-## 2. How are in-demand skills trending for Data Analyst
+## 2. How are in-demand skills trending for Data Analyst?
+
+View my notebook with detailed steps here: [3_Skills_Trend](Project\3_Skills_Trend.ipynb)
 
 ### Example Coding
 ```python
@@ -73,3 +75,10 @@ plt.show()
 - Visualization tools (Tableau, Power BI) are critical but secondary — showing that visualization is important but built on top of data skills like SQL/Python.
 - No skill declined sharply, meaning demand for these tools stayed stable across 2023, with slight dips mid-year (Jul–Sep) — possibly due to fewer job postings during that period.
 
+
+## 3. How well do jobs and skills pay for Data Analyst?
+
+View my notebook with detailed steps here: [4_Salary_Analysis](Project\4_Salary_Analysis.ipynb)
+
+
+## 4. What is the most optimal skill to learn for Data Analyst?
